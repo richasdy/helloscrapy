@@ -39,4 +39,5 @@ class QuotesSpider(scrapy.Spider):
 
             yield response.follow(next_page, callback=self.parse)
 
-            
+            # for href in response.css('ul.pager a::attr(href)'):
+            #     yield response.follow(href, callback=self.parse)
