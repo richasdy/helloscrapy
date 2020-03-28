@@ -44,3 +44,9 @@ class QuotesSpider(scrapy.Spider):
 
             # for a in response.css('ul.pager a'):
             #     yield response.follow(a, callback=self.parse)
+
+            # anchors = response.css('ul.pager a')
+            #     yield from response.follow_all(anchors, callback=self.parse)
+
+            # yield from response.follow_all(css='ul.pager a', callback=self.parse)
+
