@@ -11,6 +11,13 @@ class QuotesSpider(scrapy.Spider):
     #     for url in urls:
     #         yield scrapy.Request(url=url, callback=self.parse)
 
+    # def start_requests(self):
+    #     url = 'http://quotes.toscrape.com/'
+    #     tag = getattr(self, 'tag', None)
+    #     if tag is not None:
+    #         url = url + 'tag/' + tag
+    #     yield scrapy.Request(url, self.parse)
+
     start_urls = [
         'http://quotes.toscrape.com/page/1/',
         'http://quotes.toscrape.com/page/2/',
