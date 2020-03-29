@@ -64,9 +64,14 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
+ITEM_PIPELINES = {
 #    'helloscrapy.pipelines.HelloscrapyPipeline': 300,
-#}
+#    'helloscrapy.pipelines.DuplicatesPipeline': 300,
+#    'helloscrapy.pipelines.JsonWriterPipeline': 300,
+#    'helloscrapy.pipelines.MongoPipeline': 300,
+#    'helloscrapy.pipelines.PricePipeline': 300,
+#    'helloscrapy.pipelines.ScreenshotPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
