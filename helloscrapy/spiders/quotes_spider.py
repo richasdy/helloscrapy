@@ -18,12 +18,24 @@ class QuotesSpider(scrapy.Spider):
     #         url = url + 'tag/' + tag
     #     yield scrapy.Request(url, self.parse)
 
+    # def start_requests(self):
+    #     return [scrapy.FormRequest("http://www.example.com/login",
+    #                                formdata={'user': 'john', 'pass': 'secret'},
+    #                                callback=self.logged_in)]
+
+    # def logged_in(self, response):
+    #     # here you would extract links to follow and return Requests for
+    #     # each of them, with another callback
+    #     pass
+
     start_urls = [
         'http://quotes.toscrape.com/page/1/',
         'http://quotes.toscrape.com/page/2/',
     ]
 
     def parse(self, response):
+        
+        self.logger.info('A response from %s just arrived!', response.url)
         
         # page = response.url.split("/")[-2]
         # filename = 'quotes-%s.html' % page
