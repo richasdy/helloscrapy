@@ -1,0 +1,1183 @@
+INFO:scrapy.utils.log:Scrapy 2.0.1 started (bot: helloscrapy)
+INFO:scrapy.utils.log:Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.5 (default, Oct 25 2019, 10:52:18) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-17.7.0-x86_64-i386-64bit
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'helloscrapy',
+ 'DOWNLOAD_DELAY': 2,
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'NEWSPIDER_MODULE': 'helloscrapy.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['helloscrapy.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 1f326a2bb7ed0cff
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (404) <GET http://quotes.toscrape.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com/> (referer: None)
+DEBUG:author:Parse function called on http://quotes.toscrape.com/
+INFO:author:Parse function called on http://quotes.toscrape.com/
+WARNING:author:Parse function called on http://quotes.toscrape.com/
+ERROR:author:Parse function called on http://quotes.toscrape.com/
+CRITICAL:author:Parse function called on http://quotes.toscrape.com/
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com/page/2/> (referer: http://quotes.toscrape.com/)
+DEBUG:author:Parse function called on http://quotes.toscrape.com/page/2/
+INFO:author:Parse function called on http://quotes.toscrape.com/page/2/
+WARNING:author:Parse function called on http://quotes.toscrape.com/page/2/
+ERROR:author:Parse function called on http://quotes.toscrape.com/page/2/
+CRITICAL:author:Parse function called on http://quotes.toscrape.com/page/2/
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Steve-Martin/> from <GET http://quotes.toscrape.com/author/Steve-Martin>
+INFO:scrapy.crawler:Received SIGINT, shutting down gracefully. Send again to force 
+INFO:scrapy.core.engine:Closing spider (shutdown)
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Eleanor-Roosevelt/> from <GET http://quotes.toscrape.com/author/Eleanor-Roosevelt>
+INFO:scrapy.crawler:Received SIGINT twice, forcing unclean shutdown
+INFO:scrapy.utils.log:Scrapy 2.0.1 started (bot: helloscrapy)
+INFO:scrapy.utils.log:Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.5 (default, Oct 25 2019, 10:52:18) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-17.7.0-x86_64-i386-64bit
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'helloscrapy',
+ 'DOWNLOAD_DELAY': 2,
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'NEWSPIDER_MODULE': 'helloscrapy.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['helloscrapy.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 38f1f9725b1d11cb
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (404) <GET http://quotes.toscrape.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com/> (referer: None)
+DEBUG:author:Parse function called on http://quotes.toscrape.com/
+INFO:author:Parse function called on http://quotes.toscrape.com/
+WARNING:author:Parse function called on http://quotes.toscrape.com/
+ERROR:author:Parse function called on http://quotes.toscrape.com/
+CRITICAL:author:Parse function called on http://quotes.toscrape.com/
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com/page/2/> (referer: http://quotes.toscrape.com/)
+DEBUG:author:Parse function called on http://quotes.toscrape.com/page/2/
+INFO:author:Parse function called on http://quotes.toscrape.com/page/2/
+WARNING:author:Parse function called on http://quotes.toscrape.com/page/2/
+ERROR:author:Parse function called on http://quotes.toscrape.com/page/2/
+CRITICAL:author:Parse function called on http://quotes.toscrape.com/page/2/
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Steve-Martin/> from <GET http://quotes.toscrape.com/author/Steve-Martin>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Eleanor-Roosevelt/> from <GET http://quotes.toscrape.com/author/Eleanor-Roosevelt>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Thomas-A-Edison/> from <GET http://quotes.toscrape.com/author/Thomas-A-Edison>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Andre-Gide/> from <GET http://quotes.toscrape.com/author/Andre-Gide>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Albert-Einstein/> from <GET http://quotes.toscrape.com/author/Albert-Einstein>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Marilyn-Monroe/> from <GET http://quotes.toscrape.com/author/Marilyn-Monroe>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Jane-Austen/> from <GET http://quotes.toscrape.com/author/Jane-Austen>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Albert-Einstein/> from <GET http://quotes.toscrape.com/author/Albert-Einstein>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/J-K-Rowling/> from <GET http://quotes.toscrape.com/author/J-K-Rowling>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Albert-Einstein/> from <GET http://quotes.toscrape.com/author/Albert-Einstein>
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com/page/3/> (referer: http://quotes.toscrape.com/page/2/)
+DEBUG:author:Parse function called on http://quotes.toscrape.com/page/3/
+INFO:author:Parse function called on http://quotes.toscrape.com/page/3/
+WARNING:author:Parse function called on http://quotes.toscrape.com/page/3/
+ERROR:author:Parse function called on http://quotes.toscrape.com/page/3/
+CRITICAL:author:Parse function called on http://quotes.toscrape.com/page/3/
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Allen-Saunders/> from <GET http://quotes.toscrape.com/author/Allen-Saunders>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Mark-Twain/> from <GET http://quotes.toscrape.com/author/Mark-Twain>
+INFO:scrapy.crawler:Received SIGINT, shutting down gracefully. Send again to force 
+INFO:scrapy.core.engine:Closing spider (shutdown)
+INFO:scrapy.crawler:Received SIGINT twice, forcing unclean shutdown
+INFO:scrapy.utils.log:Scrapy 2.0.1 started (bot: helloscrapy)
+INFO:scrapy.utils.log:Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.5 (default, Oct 25 2019, 10:52:18) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-17.7.0-x86_64-i386-64bit
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'helloscrapy',
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'LOGSTATS_INTERVAL': 0,
+ 'NEWSPIDER_MODULE': 'helloscrapy.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['helloscrapy.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 21d11eff58ebf326
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+INFO:scrapy.core.engine:Spider opened
+DEBUG:scrapy.core.engine:Crawled (404) <GET http://quotes.toscrape.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com/scroll> (referer: None)
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:scrapy.utils.log:Scrapy 2.0.1 started (bot: helloscrapy)
+INFO:scrapy.utils.log:Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.5 (default, Oct 25 2019, 10:52:18) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-17.7.0-x86_64-i386-64bit
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'helloscrapy',
+ 'DOWNLOAD_DELAY': 2,
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'NEWSPIDER_MODULE': 'helloscrapy.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['helloscrapy.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: ea4a3c2c6cacbe11
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (404) <GET http://quotes.toscrape.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com/> (referer: None)
+DEBUG:author:Parse function called on http://quotes.toscrape.com/
+INFO:author:Parse function called on http://quotes.toscrape.com/
+WARNING:author:Parse function called on http://quotes.toscrape.com/
+ERROR:author:Parse function called on http://quotes.toscrape.com/
+CRITICAL:author:Parse function called on http://quotes.toscrape.com/
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Albert-Einstein/> from <GET http://quotes.toscrape.com/author/Albert-Einstein>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/J-K-Rowling/> from <GET http://quotes.toscrape.com/author/J-K-Rowling>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Albert-Einstein/> from <GET http://quotes.toscrape.com/author/Albert-Einstein>
+INFO:scrapy.crawler:Received SIGINT, shutting down gracefully. Send again to force 
+INFO:scrapy.core.engine:Closing spider (shutdown)
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com/page/2/> (referer: http://quotes.toscrape.com/)
+DEBUG:author:Parse function called on http://quotes.toscrape.com/page/2/
+INFO:author:Parse function called on http://quotes.toscrape.com/page/2/
+WARNING:author:Parse function called on http://quotes.toscrape.com/page/2/
+ERROR:author:Parse function called on http://quotes.toscrape.com/page/2/
+CRITICAL:author:Parse function called on http://quotes.toscrape.com/page/2/
+INFO:scrapy.crawler:Received SIGINT twice, forcing unclean shutdown
+INFO:scrapy.utils.log:Scrapy 2.0.1 started (bot: helloscrapy)
+INFO:scrapy.utils.log:Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.5 (default, Oct 25 2019, 10:52:18) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-17.7.0-x86_64-i386-64bit
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'helloscrapy',
+ 'DOWNLOAD_DELAY': 2,
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'NEWSPIDER_MODULE': 'helloscrapy.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['helloscrapy.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: d7a5352a8a4f5b6c
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (404) <GET http://quotes.toscrape.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com/> (referer: None)
+DEBUG:author:Parse function called on http://quotes.toscrape.com/
+INFO:author:Parse function called on http://quotes.toscrape.com/
+WARNING:author:Parse function called on http://quotes.toscrape.com/
+ERROR:author:Parse function called on http://quotes.toscrape.com/
+CRITICAL:author:Parse function called on http://quotes.toscrape.com/
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Albert-Einstein/> from <GET http://quotes.toscrape.com/author/Albert-Einstein>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Marilyn-Monroe/> from <GET http://quotes.toscrape.com/author/Marilyn-Monroe>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET http://quotes.toscrape.com/author/Jane-Austen/> from <GET http://quotes.toscrape.com/author/Jane-Austen>
+INFO:scrapy.crawler:Received SIGINT, shutting down gracefully. Send again to force 
+INFO:scrapy.core.engine:Closing spider (shutdown)
+INFO:scrapy.crawler:Received SIGINT twice, forcing unclean shutdown
+INFO:scrapy.utils.log:Scrapy 2.0.1 started (bot: helloscrapy)
+INFO:scrapy.utils.log:Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.5 (default, Oct 25 2019, 10:52:18) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-17.7.0-x86_64-i386-64bit
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'helloscrapy',
+ 'DOWNLOAD_DELAY': 2,
+ 'NEWSPIDER_MODULE': 'helloscrapy.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['helloscrapy.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 1c3ae9be59c0cdf1
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (404) <GET http://quotes.toscrape.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com> (referer: None)
+INFO:quotesitemloader:A response from http://quotes.toscrape.com just arrived!
+ERROR:scrapy.core.scraper:Spider error processing <GET http://quotes.toscrape.com> (referer: None)
+Traceback (most recent call last):
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/defer.py", line 117, in iter_errback
+    yield next(it)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Volumes/Data/DockerProjects/helloscrapy/helloscrapy/spiders/quotesitemloader_spider.py", line 25, in parse
+    l = ItemLoader(item=Quote, response=quote)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/loader/__init__.py", line 37, in __init__
+    selector = self.default_selector_class(response)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/selector/unified.py", line 78, in __init__
+    text = response.text
+AttributeError: text
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 448,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 2719,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 3.38048,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 29, 8, 19, 36, 265393),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 11,
+ 'memusage/max': 53415936,
+ 'memusage/startup': 53415936,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2020, 3, 29, 8, 19, 32, 884913)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.0.1 started (bot: helloscrapy)
+INFO:scrapy.utils.log:Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.5 (default, Oct 25 2019, 10:52:18) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-17.7.0-x86_64-i386-64bit
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'helloscrapy',
+ 'DOWNLOAD_DELAY': 2,
+ 'NEWSPIDER_MODULE': 'helloscrapy.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['helloscrapy.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: d934cc993fcce977
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (404) <GET http://quotes.toscrape.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com> (referer: None)
+INFO:quotesitemloader:A response from http://quotes.toscrape.com just arrived!
+DEBUG:scrapy.core.scraper:Scraped from <200 http://quotes.toscrape.com>
+{'text': '“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”', 'author': 'Albert Einstein', 'tags': ['change', 'deep-thoughts', 'thinking', 'world']}
+DEBUG:scrapy.core.scraper:Scraped from <200 http://quotes.toscrape.com>
+{'text': '“It is our choices, Harry, that show what we truly are, far more than our abilities.”', 'author': 'J.K. Rowling', 'tags': ['abilities', 'choices']}
+DEBUG:scrapy.core.scraper:Scraped from <200 http://quotes.toscrape.com>
+{'text': '“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”', 'author': 'Albert Einstein', 'tags': ['inspirational', 'life', 'live', 'miracle', 'miracles']}
+DEBUG:scrapy.core.scraper:Scraped from <200 http://quotes.toscrape.com>
+{'text': '“The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.”', 'author': 'Jane Austen', 'tags': ['aliteracy', 'books', 'classic', 'humor']}
+DEBUG:scrapy.core.scraper:Scraped from <200 http://quotes.toscrape.com>
+{'text': "“Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.”", 'author': 'Marilyn Monroe', 'tags': ['be-yourself', 'inspirational']}
+DEBUG:scrapy.core.scraper:Scraped from <200 http://quotes.toscrape.com>
+{'text': '“Try not to become a man of success. Rather become a man of value.”', 'author': 'Albert Einstein', 'tags': ['adulthood', 'success', 'value']}
+DEBUG:scrapy.core.scraper:Scraped from <200 http://quotes.toscrape.com>
+{'text': '“It is better to be hated for what you are than to be loved for what you are not.”', 'author': 'André Gide', 'tags': ['life', 'love']}
+DEBUG:scrapy.core.scraper:Scraped from <200 http://quotes.toscrape.com>
+{'text': "“I have not failed. I've just found 10,000 ways that won't work.”", 'author': 'Thomas A. Edison', 'tags': ['edison', 'failure', 'inspirational', 'paraphrased']}
+DEBUG:scrapy.core.scraper:Scraped from <200 http://quotes.toscrape.com>
+{'text': "“A woman is like a tea bag; you never know how strong it is until it's in hot water.”", 'author': 'Eleanor Roosevelt', 'tags': ['misattributed-eleanor-roosevelt']}
+DEBUG:scrapy.core.scraper:Scraped from <200 http://quotes.toscrape.com>
+{'text': '“A day without sunshine is like, you know, night.”', 'author': 'Steve Martin', 'tags': ['humor', 'obvious', 'simile']}
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 448,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 2719,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 3.208153,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 29, 8, 20, 33, 128315),
+ 'item_scraped_count': 10,
+ 'log_count/DEBUG': 12,
+ 'log_count/INFO': 11,
+ 'memusage/max': 53411840,
+ 'memusage/startup': 53411840,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 3, 29, 8, 20, 29, 920162)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.0.1 started (bot: helloscrapy)
+INFO:scrapy.utils.log:Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.5 (default, Oct 25 2019, 10:52:18) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-17.7.0-x86_64-i386-64bit
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'helloscrapy',
+ 'DOWNLOAD_DELAY': 2,
+ 'NEWSPIDER_MODULE': 'helloscrapy.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['helloscrapy.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: d23c689d16a469f5
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (404) <GET http://quotes.toscrape.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com> (referer: None)
+INFO:quotesitemloader:A response from http://quotes.toscrape.com just arrived!
+ERROR:scrapy.core.scraper:Spider error processing <GET http://quotes.toscrape.com> (referer: None)
+Traceback (most recent call last):
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/defer.py", line 117, in iter_errback
+    yield next(it)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Volumes/Data/DockerProjects/helloscrapy/helloscrapy/spiders/quotesitemloader_spider.py", line 20, in parse
+    l = ItemLoader(item=Quote(), response=response)
+TypeError: 'module' object is not callable
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 448,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 2719,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 2.98145,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 29, 8, 23, 38, 462165),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 11,
+ 'memusage/max': 53506048,
+ 'memusage/startup': 53506048,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/TypeError': 1,
+ 'start_time': datetime.datetime(2020, 3, 29, 8, 23, 35, 480715)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.0.1 started (bot: helloscrapy)
+INFO:scrapy.utils.log:Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.5 (default, Oct 25 2019, 10:52:18) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-17.7.0-x86_64-i386-64bit
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'helloscrapy',
+ 'DOWNLOAD_DELAY': 2,
+ 'NEWSPIDER_MODULE': 'helloscrapy.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['helloscrapy.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 1a43e204a5ff187b
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (404) <GET http://quotes.toscrape.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com> (referer: None)
+INFO:quotesitemloader:A response from http://quotes.toscrape.com just arrived!
+ERROR:scrapy.core.scraper:Spider error processing <GET http://quotes.toscrape.com> (referer: None)
+Traceback (most recent call last):
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/defer.py", line 117, in iter_errback
+    yield next(it)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Volumes/Data/DockerProjects/helloscrapy/helloscrapy/spiders/quotesitemloader_spider.py", line 25, in parse
+    l = ItemLoader(item=Quote(), response=quote)
+TypeError: 'module' object is not callable
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 448,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 2719,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 3.502971,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 29, 9, 22, 36, 739749),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 11,
+ 'memusage/max': 53395456,
+ 'memusage/startup': 53395456,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/TypeError': 1,
+ 'start_time': datetime.datetime(2020, 3, 29, 9, 22, 33, 236778)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.0.1 started (bot: helloscrapy)
+INFO:scrapy.utils.log:Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.5 (default, Oct 25 2019, 10:52:18) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-17.7.0-x86_64-i386-64bit
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'helloscrapy',
+ 'DOWNLOAD_DELAY': 2,
+ 'NEWSPIDER_MODULE': 'helloscrapy.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['helloscrapy.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 094986b5abee4e3b
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (404) <GET http://quotes.toscrape.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com> (referer: None)
+INFO:quotesitemloader:A response from http://quotes.toscrape.com just arrived!
+ERROR:scrapy.core.scraper:Spider error processing <GET http://quotes.toscrape.com> (referer: None)
+Traceback (most recent call last):
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/defer.py", line 117, in iter_errback
+    yield next(it)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Volumes/Data/DockerProjects/helloscrapy/helloscrapy/spiders/quotesitemloader_spider.py", line 25, in parse
+    l = ItemLoader(item=Quote, response=quote)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/loader/__init__.py", line 37, in __init__
+    selector = self.default_selector_class(response)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/selector/unified.py", line 78, in __init__
+    text = response.text
+AttributeError: text
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 448,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 2719,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 2.846151,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 29, 9, 27, 49, 665429),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 11,
+ 'memusage/max': 53374976,
+ 'memusage/startup': 53374976,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2020, 3, 29, 9, 27, 46, 819278)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.0.1 started (bot: helloscrapy)
+INFO:scrapy.utils.log:Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.5 (default, Oct 25 2019, 10:52:18) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-17.7.0-x86_64-i386-64bit
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'helloscrapy',
+ 'DOWNLOAD_DELAY': 2,
+ 'NEWSPIDER_MODULE': 'helloscrapy.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['helloscrapy.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: d569abd51de74aa0
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (404) <GET http://quotes.toscrape.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com> (referer: None)
+INFO:quotesitemloader:A response from http://quotes.toscrape.com just arrived!
+INFO:quotesitemloader:in quote loop
+ERROR:scrapy.core.scraper:Spider error processing <GET http://quotes.toscrape.com> (referer: None)
+Traceback (most recent call last):
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/defer.py", line 117, in iter_errback
+    yield next(it)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Volumes/Data/DockerProjects/helloscrapy/helloscrapy/spiders/quotesitemloader_spider.py", line 27, in parse
+    l = ItemLoader(item=Quote, response=quote)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/loader/__init__.py", line 37, in __init__
+    selector = self.default_selector_class(response)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/selector/unified.py", line 78, in __init__
+    text = response.text
+AttributeError: text
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 448,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 2719,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 2.677463,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 29, 9, 30, 45, 603997),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'memusage/max': 53338112,
+ 'memusage/startup': 53338112,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2020, 3, 29, 9, 30, 42, 926534)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.0.1 started (bot: helloscrapy)
+INFO:scrapy.utils.log:Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.5 (default, Oct 25 2019, 10:52:18) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-17.7.0-x86_64-i386-64bit
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'helloscrapy',
+ 'DOWNLOAD_DELAY': 2,
+ 'NEWSPIDER_MODULE': 'helloscrapy.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['helloscrapy.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 6eb7e355e0bcd015
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (404) <GET http://quotes.toscrape.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com> (referer: None)
+INFO:quotesitemloader:A response from http://quotes.toscrape.com just arrived!
+INFO:quotesitemloader:in quote loop
+ERROR:scrapy.core.scraper:Spider error processing <GET http://quotes.toscrape.com> (referer: None)
+Traceback (most recent call last):
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/defer.py", line 117, in iter_errback
+    yield next(it)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Volumes/Data/DockerProjects/helloscrapy/helloscrapy/spiders/quotesitemloader_spider.py", line 27, in parse
+    l = ItemLoader(item=Quote, response=quote.text)
+AttributeError: text
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 448,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 2719,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 3.060439,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 29, 9, 31, 12, 228129),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'memusage/max': 53334016,
+ 'memusage/startup': 53334016,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2020, 3, 29, 9, 31, 9, 167690)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.0.1 started (bot: helloscrapy)
+INFO:scrapy.utils.log:Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.5 (default, Oct 25 2019, 10:52:18) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-17.7.0-x86_64-i386-64bit
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'helloscrapy',
+ 'NEWSPIDER_MODULE': 'helloscrapy.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['helloscrapy.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 4a579a9b05b297fd
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (404) <GET http://quotes.toscrape.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com/> (referer: None)
+INFO:quotes-tds:Parse function called on http://quotes.toscrape.com/
+ERROR:scrapy.core.scraper:Spider error processing <GET http://quotes.toscrape.com/> (referer: None)
+Traceback (most recent call last):
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/defer.py", line 117, in iter_errback
+    yield next(it)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Volumes/Data/DockerProjects/helloscrapy/helloscrapy/spiders/QuotesTdsSpider.py", line 19, in parse
+    loader = ItemLoader(item=QuoteItem(), selector=quote)
+TypeError: 'module' object is not callable
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 448,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 2719,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 0.981947,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 29, 9, 42, 40, 839238),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 11,
+ 'memusage/max': 53501952,
+ 'memusage/startup': 53501952,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/TypeError': 1,
+ 'start_time': datetime.datetime(2020, 3, 29, 9, 42, 39, 857291)}
+INFO:scrapy.core.engine:Spider closed (finished)
+INFO:scrapy.utils.log:Scrapy 2.0.1 started (bot: helloscrapy)
+INFO:scrapy.utils.log:Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.7.5 (default, Oct 25 2019, 10:52:18) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Darwin-17.7.0-x86_64-i386-64bit
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'helloscrapy',
+ 'NEWSPIDER_MODULE': 'helloscrapy.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['helloscrapy.spiders']}
+INFO:scrapy.extensions.telnet:Telnet Password: 14f32d71a829e00e
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (404) <GET http://quotes.toscrape.com/robots.txt> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET http://quotes.toscrape.com/> (referer: None)
+INFO:quotes-tds:Parse function called on http://quotes.toscrape.com/
+ERROR:scrapy.core.scraper:Spider error processing <GET http://quotes.toscrape.com/> (referer: None)
+Traceback (most recent call last):
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/defer.py", line 117, in iter_errback
+    yield next(it)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/Volumes/Data/DockerProjects/helloscrapy/helloscrapy/spiders/QuotesTdsSpider.py", line 19, in parse
+    loader = ItemLoader(item=QuoteItem, selector=quote)
+  File "/Users/richasdy/opt/anaconda3/envs/data-science/lib/python3.7/site-packages/scrapy/loader/__init__.py", line 47, in __init__
+    for field_name, value in item.items():
+AttributeError: module 'helloscrapy.items.QuoteItem' has no attribute 'items'
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 448,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 2719,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 0.846413,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 29, 9, 42, 52, 206029),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 11,
+ 'memusage/max': 53383168,
+ 'memusage/startup': 53383168,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2020, 3, 29, 9, 42, 51, 359616)}
+INFO:scrapy.core.engine:Spider closed (finished)
